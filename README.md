@@ -1,3 +1,5 @@
+# 此插件是TryStage服务器的VelocityPlayerList改编版本，支持BungeeCord端，以下介绍文件直接抄的他们的懒得改
+
 # VelocityPlayerList
 
 ## 📌 Overview
