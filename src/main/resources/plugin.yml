@@ -1,0 +1,31 @@
+name: BungeePlayerList
+main: top.yzljc.BungeePlayerList.BungeePlayerList
+version: 1.0
+author: "YzLjc"
+description: Show BungeeCord player list and provide management commands.
+commands:
+  bonlines:
+    description: Show online players on the network or a specific server.
+    usage: /bonlines [server]
+    permission: bpl.onlines
+  vtp:
+    description: Teleport to the server where the specified player is.
+    usage: /vtp <player> or /vtp <from> <to>
+    permission: bpl.teleport
+  vpl:
+    description: Reload BungeePlayerList config.
+    usage: /vpl
+    permission: bpl.admin
+permissions:
+  bpl.announce:
+    description: Receive player join/leave notifications
+    default: op
+  bpl.onlines:
+    description: Use /bonlines command
+    default: true
+  bpl.teleport:
+    description: Use /vtp command
+    default: op
+  bpl.admin:
+    description: Use /vpl reload command
+    default: op
