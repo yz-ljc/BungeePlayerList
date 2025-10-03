@@ -1,0 +1,23 @@
+# BungeePlayerList 1.0 by YzLjc
+# Website: https://github.com/yz-ljc
+# Permission:
+#   bpl.announce - Saw the player join/leave message
+#   bpl.teleport - /vtp <player>
+#   bpl.onlines  - /onlines
+
+options:
+  player-join-notify: true
+  player-leave-notify: true
+
+message:
+  split-format: ","
+  join: "&7[&a+&7] {player}"
+  leave: "&7[&c-&7] {player}"
+  onlines: "&aTheres {count} players online"
+  vtp-usage: "&cUsage: /vtp <player>"
+  null-player: "&cTheres no player that name"
+  teleport: "&7[&e↑&7] {player}..."
+  teleport-failed: "&cFailed to teleport to target player's server"
+  console-run-command: "&cOnly player can run this command."
+  noperm-run-command: "&cYou do not have permission to run this command."
+  server-not-exists: "&cServer does not exist"

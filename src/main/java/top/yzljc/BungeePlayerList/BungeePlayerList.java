@@ -110,11 +110,12 @@ public class BungeePlayerList extends Plugin implements Listener {
     @net.md_5.bungee.event.EventHandler
     public void onPlayerLeave(PlayerDisconnectEvent event) {
         ProxiedPlayer player = event.getPlayer();
+        boolean isStaff = player.hasPermission("bpl.staff"); // 先保存权限状态
+
         if (config.getBoolean("options.player-leave-notify", true)) {
             for (ProxiedPlayer target : proxyServer.getPlayers()) {
                 if (target.hasPermission("bpl.announce")) {
-                    // 判断是否为staff
-                    if (player.hasPermission("bpl.staff")) {
+                    if (isStaff) {
                         target.sendMessage(color("&b[STAFF] &c[ADMIN] " + player.getName() + " &e离开了服务器"));
                     } else {
                         target.sendMessage(color(config.getString("message.leave", "&7[&c-&7] {player}").replace("{player}", player.getName())));
