@@ -1,9 +1,9 @@
 # 此插件是TryStage服务器的VelocityPlayerList改编版本，支持BungeeCord端，以下介绍文件直接抄的他们的懒得改
 
-# VelocityPlayerList
+# BungeePlayerList
 
 ## 📌 Overview
-**VelocityPlayerList** is a powerful utility plugin for [Velocity](https://velocitypowered.com/) proxy servers that enhances player management and visibility across your network. Developed by TrystageBedwars, this plugin provides essential tools for server administrators and staff members to monitor and interact with players efficiently.
+**BungeePlayerList** is a powerful utility plugin for BungeeCord proxy servers that enhances player management and visibility across your network. Developed by TrystageBedwars, this plugin provides essential tools for server administrators and staff members to monitor and interact with players efficiently.
 
 ---
 
@@ -11,20 +11,20 @@
 
 ### 🔗 Cross-Server Teleportation
 - `/vtp <player>` — Instantly teleport to the sub-server where the target player is located  
-  _Requires `vpl.teleport` permission_
+  _Requires `bpl.teleport` permission_
 - Customizable error messages for invalid targets
 
 ### 👥 Player Tracking
 - `/onlines [server]` — View player lists with flexible options:  
   - Shows all players network-wide when no server specified  
   - Filters by specific sub-server when provided  
-  _Requires `vpl.onlines` permission_
+  _Requires `bpl.onlines` permission_
 - Displays formatted player counts
 
 ### 🔔 Join/Leave Notifications
 - Customizable player join/leave messages
 - Displays in proxy chat when players connect/disconnect
-- _Requires `vpl.announce` permission to see notifications_
+- _Requires `bpl.announce` permission to see notifications_
 - Fully configurable message formats
 
 ---
@@ -55,9 +55,9 @@ The plugin uses `config.toml` with these sections:
 # Thanks for using VelocityPlayerList!  |  TrystageBedwars
 #
 # Permission:
-#   vpl.announce - Saw the player join/leave message
-#   vpl.teleport - /vtp <player>
-#   vpl.onlines  - /onlines
+#   bpl.announce - Saw the player join/leave message
+#   bpl.teleport - /vtp <player>
+#   bpl.onlines  - /onlines
 
 [options]
 player-join-notify = true
@@ -84,9 +84,9 @@ server-not-exists = "<red>Server does not exist"
 
 | Permission       | Description                                 |
 | ---------------- | ------------------------------------------- |
-| `vpl.announce`   | Receive player join/leave notifications     |
-| `vpl.teleport`   | Access to `/vtp` command                    |
-| `vpl.onlines`    | Access to `/onlines` command                |
+| `bpl.announce`   | Receive player join/leave notifications     |
+| `bpl.teleport`   | Access to `/vtp` command                    |
+| `bpl.onlines`    | Access to `/onlines` command                |
 
 ---
 
